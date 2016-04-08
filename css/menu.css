@@ -21,3 +21,8 @@
 .links li{
   padding: 5px 0;
 }
+
+.links{
+  opacity: 0;
+  transition: all .2s;
+}
