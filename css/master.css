@@ -8,8 +8,9 @@ body{
 .red{color: crimson;}
 
 #title{
-  font-family: Cambria;
+  font-family: Cambria, serif;
   padding: 20px;
+  font-size: 2.3em;
 }
 
 .content{
