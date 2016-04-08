@@ -1,1 +1,1 @@
-$('.menu').load("menu.html");
+$('.links').load("menu.html");
