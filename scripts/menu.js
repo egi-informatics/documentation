@@ -6,6 +6,10 @@ function linkPreventer(){
     e.preventDefault();
     // Loads the html into the main content element.
     $(".content").load($(this).attr("href"));
+
+    // Sets the link to match the current page
+    $('.links a').removeClass("active");
+    $(this).addClass("active");
   });
 }
 

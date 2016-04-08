@@ -27,3 +27,7 @@
   opacity: 0;
   transition: all .3s;
 }
+
+a.active{
+  border-bottom: 3px solid #FF9800;
+}
