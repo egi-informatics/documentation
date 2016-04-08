@@ -16,7 +16,7 @@ body{
 .content{
   width: calc(100% - 350px);
   float: right;
-  background-color: lightgreen;
+  /*background-color: lightgreen;*/
   box-sizing: border-box;
   padding: 40px;
 }
@@ -29,5 +29,6 @@ a {
 }
 
 a:hover{
-  border-bottom: 3px solid deepskyblue;
+  /*border-bottom: 3px solid #2196F3; blue*/
+  border-bottom: 3px solid #FF9800;
 }
