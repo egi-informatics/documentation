@@ -1,3 +1,5 @@
 $('.links').load("menu.html");
 
-$('.links').css("opacity", "1");
+window.setTimeout(function(){
+  $('.links').css("opacity", "1");
+}, 500);
