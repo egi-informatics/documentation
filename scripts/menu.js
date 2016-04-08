@@ -1,11 +1,15 @@
 $('.links').load("menu.html");
 
-$('.links a').on('click', 'a', function(e) {
+function linkPreventer(){
+  $('.links a').click(function(e) {
+    // Prevents links in the menu from opening the raw html pages.
     e.preventDefault();
-    console.log($(this).text());
+    // Loads the html into the main content element.
     $(".content").load($(this).attr("href"));
-});
+  });
+}
 
 window.setTimeout(function(){
+  linkPreventer();
   $('.links').css("opacity", "1");
-}, 400);
+}, 300);
