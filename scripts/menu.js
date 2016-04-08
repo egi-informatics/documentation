@@ -1,3 +1,3 @@
 $('.links').load("menu.html");
 
-$('.links').show();
+$('.links').css("opacity", "1");
