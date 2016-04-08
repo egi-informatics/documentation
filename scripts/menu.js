@@ -1,8 +1,7 @@
 $('.links').load("menu.html");
 
-$('.links a').click(function(e) {
+$('.links a').on('click', 'a', function(e) {
     e.preventDefault();
-    e.stopPropagation();
     console.log($(this).text());
     $(".content").load($(this).attr("href"));
 });
