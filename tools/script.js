@@ -5,7 +5,7 @@ window.onload = function(){
 }
 function main(){
   finput = document.getElementById('file-input');
-  
+
   var config = {
   	delimiter: ",",	// auto-detect
   	newline: "",	// auto-detect
@@ -42,7 +42,7 @@ function main(){
     body.innerHTML += "<h3 class='article'>Top Articles</h3>";
     body.innerHTML += "<div class='article-wrap'></div>";
     var articleWrap = document.getElementsByClassName('article-wrap')[0];
-    articleWrap.innerHTML += "<span style='margin-bottom: 5px;margin-top:-24px;display: inline-block;'><span class='article' style='padding-right: 0;'></span>Clicks</span>";
+    articleWrap.innerHTML += "<span class='clicks'><span class='article' style='padding-right: 0;'></span>Clicks</span>";
     for(i = 23; i <= 27; i++){
       articleWrap.innerHTML += "<p><span class='article'>" + data[i][0].replace(/\//g, " ").trim().split(" ").pop() + "</span>" + data[i][1] + "</p>";
     }
@@ -50,7 +50,7 @@ function main(){
     body.innerHTML += "<h3 class='article'>All Articles</h3>";
     body.innerHTML += "<div class='article-wrap'></div>";
     articleWrap = document.getElementsByClassName('article-wrap')[1];
-    articleWrap.innerHTML += "<span style='margin-bottom: 5px;margin-top:-24px;display: inline-block;'><span class='article' style='padding-right: 0;'></span>Clicks</span>";
+    articleWrap.innerHTML += "<span class='clicks'><span class='article' style='padding-right: 0;'></span>Clicks</span>";
     for(i = 23; i <= data.length - 2; i++){
       articleWrap.innerHTML += "<p><span class='article'>" + data[i][0].replace(/\//g, " ").trim().split(" ").pop() + "</span>" + data[i][1] + "</p>";
     }
