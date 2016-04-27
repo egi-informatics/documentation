@@ -34,7 +34,8 @@ function main(){
     //body.innerHTML += "<p>" + data[3][1] + "</p>";   // Date
     body.innerHTML += "<h3>Mailchimp Statistics</h3>";
     body.innerHTML += "<p><span class='first'>" + data[6][0] + "</span>" + data[6][1] + "</p>";   // Total Recipents
-    body.innerHTML += "<p><span class='first'>" + data[12][0] + "</span>" + data[12][1] + "</p>"; // Total Opens
+    // body.innerHTML += "<p><span class='first'>" + data[12][0] + "</span>" + data[12][1] + "</p>"; // Total Opens
+    body.innerHTML += "<p><span class='first'>" + "Opens:" + "</span>" + data[11][1] + "</p>"; // Recipiens Who Opened
     body.innerHTML += "<p><span class='first'>" + data[15][0] + "</span>" + data[15][1] + "</p>"; // Total Clicks
     body.innerHTML += "<p><span class='first'>" + data[8][0] + "</span>" + data[8][1] + "</p>";   // Bounced
     body.innerHTML += "<p><span class='first'>" + data[17][0] + "</span>" + data[17][1] + "</p>"; // Unsubscriptions
