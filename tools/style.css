@@ -27,6 +27,11 @@ h3{
 .article-wrap p:nth-child(even) {
     background-color: #DCDCDC;
 }
+span.clicks{
+  margin-bottom: 5px;
+  margin-top: -24px;
+  display: block;
+}
 @media print
 {
   #file-input{
