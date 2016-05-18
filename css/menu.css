@@ -4,6 +4,7 @@
   background-color: whitesmoke;
   position: fixed;
   float: left;
+  box-shadow: 0 0 16px -7px black;
 }
 
 .menu .links {
