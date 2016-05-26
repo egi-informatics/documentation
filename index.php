@@ -9,11 +9,17 @@
   </head>
   <body>
     <h1 id="title">Documentation</h1>
-    <form action="index.php" method="post">
+    <form action="." method="post">
       <?php
-      if(!isset($_POST['password']) || $_POST['password'] != "EGI.slc423"){
+      $password = $_POST['password'];
+
+      if(!isset($password) || $password != "EGI.slc423"){
         echo "<input id='pass' type='password' name='password' placeholder='Password'>";
         echo "<input type='submit'>";
+        if(isset($password)){
+          echo "<script>$('#pass').addClass('error');</script>";
+        }
+        echo "<script>$('#pass').get(0).focus()</script>";
         exit();
       }
       ?>

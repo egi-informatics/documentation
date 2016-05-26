@@ -61,6 +61,16 @@ form{
 }
 
 #pass{
-  padding: 2px 8px;
+  padding: 5px;
   margin-right: 10px;
+  //border: 1px solid gray;
+}
+
+#pass:focus{
+  //border: 2px solid dodgerblue;
+  outline: 0;
+}
+
+.error{
+  border: 2px solid crimson;
 }
