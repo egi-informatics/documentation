@@ -2,7 +2,8 @@
 
 body{
   font-family: "Myriad Pro", sans-serif;
-  min-width: 1000px;
+  width: 1000px;
+  margin: 0 auto;
 }
 
 .red{color: crimson;}
@@ -24,6 +25,18 @@ ul + h3 {
 ul{
   padding: 0 20px;
   list-style-type: none;
+}
+
+.name{
+  width: 320px;
+  display: inline-block;
+}
+
+.ext{
+  font-family: monospace;
+  color: #333;
+  width: 40px;
+  display: inline-block;
 }
 
 .modified{

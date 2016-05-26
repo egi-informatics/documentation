@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php include("functions.php") ?>
 <html>
   <head>
     <meta charset="utf-8">
@@ -9,31 +10,11 @@
   <body>
     <h1 id="title">Documentation</h1>
     <h3>iPad</h3>
-    <ul>
-      <?php
-      $path    = 'ipad/';
-      $filenames = array_slice(scandir($path), 2);
-      $files = scandir($path);
-
-      foreach ($filenames as $file) {
-        $date = date("F d Y H:i:s", filemtime($path . $file));
-        echo "<li><a href='$path$file'>" . basename($file, ".txt") . "</a><span class='modified'>" . $date . "</span></li>";
-      }
-      ?>
-    </ul>
+    <ul> <?php writeAll('ipad/'); ?> </ul>
     <h3>Website</h3>
-    <ul>
-      <?php
-      $path    = 'website/';
-      $filenames = array_slice(scandir($path), 2);
-      $files = scandir($path);
-
-      foreach ($filenames as $file) {
-        $date = date("F d Y H:i:s", filemtime($path . $file));
-        echo "<li><a href='$path$file'>" . basename($file, ".txt") . "</a><span class='modified'>" . $date . "</span></li>";
-      }
-      ?>
-    </ul>
+    <ul> <?php writeAll('website/'); ?> </ul>
+    <h3>Newsletter</h3>
+    <ul> <?php writeAll('newsletter/'); ?> </ul>
     <footer></footer>
   </body>
 </html>
