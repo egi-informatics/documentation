@@ -9,6 +9,16 @@
   </head>
   <body>
     <h1 id="title">Documentation</h1>
+    <form action="index.php" method="post">
+      <?php
+      if(!isset($_POST['password']) || $_POST['password'] != "EGI.slc423"){
+        echo "<input id='pass' type='password' name='password' placeholder='Password'>";
+        echo "<input type='submit'>";
+        exit();
+      }
+      ?>
+    </form>
+
     <h3>iPad</h3>
     <ul> <?php writeAll('ipad/'); ?> </ul>
     <h3>Website</h3>
