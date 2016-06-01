@@ -1,0 +1,7 @@
+[ ] CA - Add New
+[X] CA - Remove
+[ ] Projects - Add New
+[ ] Projects - Remove
+[ ] Projects - Update Status
+[ ] Staff - Add New
+[ ] Staff - Remove
