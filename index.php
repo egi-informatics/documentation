@@ -27,8 +27,8 @@
 
     <?php list_directories(); ?>
 
-    <form class="hidden" action="markdown_reader.php" method="post">
-      <input id="md-input" type="text" name="path" value="">
+    <form class="hidden" action="markdown_reader.php" method="get">
+      <input id="md-input" type="text" name="name" value="">
       <input id="md-submit" type='submit'>
     </form>
 

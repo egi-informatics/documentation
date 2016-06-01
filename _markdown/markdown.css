@@ -1,0 +1,13 @@
+body{
+  background-color: #525659;
+  font-family: 'Myriad Pro', sans-serif;
+}
+
+.content{
+  width: 1140px;
+  margin: 30 auto;
+  background-color: white;
+  padding: 60px;
+  box-sizing: border-box;
+  box-shadow: 0 0 15px -2px;
+}

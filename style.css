@@ -18,6 +18,10 @@ h3 {
   padding: 10px 20px;
 }
 
+h2:first-of-type{
+  margin-top: 20px;
+}
+
 ul + h3 {
     margin-top: 20px;
 }
