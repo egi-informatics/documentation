@@ -11,3 +11,32 @@ body{
   box-sizing: border-box;
   box-shadow: 0 0 15px -2px;
 }
+
+code{
+  padding: 1px 5px;
+  font-size: 13px;
+  background-color: #eff0f1;
+}
+
+li {
+    margin: 8px 0;
+}
+
+hr{
+  border: none;
+  border-top: 1px solid gray;
+  margin-bottom: 26px;
+}
+
+.date {
+    margin-top: 50px;
+}
+
+@media print {
+  body{
+    background: transparent;
+  }
+  .content{
+    margin: 0;
+  }
+}
