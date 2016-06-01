@@ -43,6 +43,12 @@ ul{
   margin-left: 30px;
 }
 
+.md-link{
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 li {
     padding: 5px 10px;
 }
@@ -74,3 +80,5 @@ form{
 .error{
   border: 2px solid crimson;
 }
+
+.hidden{display: none;}

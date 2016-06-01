@@ -27,6 +27,21 @@
 
     <?php list_directories(); ?>
 
-    <footer></footer>
+    <form class="hidden" action="markdown_reader.php" method="post">
+      <input id="md-input" type="text" name="path" value="">
+      <input id="md-submit" type='submit'>
+    </form>
+
+    <footer>
+      <script type="text/javascript">
+      function loadMarkdown(){
+        var value = $(this).attr('value');
+        //alert(value);
+        $('#md-input').attr('value', value);
+        $('#md-submit').click();
+      }
+      $('.md-link').click(loadMarkdown);
+      </script>
+    </footer>
   </body>
 </html>

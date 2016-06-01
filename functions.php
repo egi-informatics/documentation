@@ -18,7 +18,13 @@ function write($path, $file){
   # $format = "F d, Y H:i:s";
   $format = "F d, Y";
   $date = date($format, filemtime($path . $file));
-  echo "<li><span class='name'><a href='$path$file'>" . get_name($file) . "</a></span> <span class='ext'>" . get_ext($file) . "</span> <span class='modified'>" . $date . "</span></li>";
+  $name = get_name($file);
+  $ext = get_ext($file);
+  if($ext == "md"){
+    echo "<li><span class='name'><div value='$path$file' class='md-link'>$name</div></span> <span class='ext'>$ext</span> <span class='modified'>$date</span></li>";
+  } else{
+    echo "<li><span class='name'><a href='$path$file'>$name</a></span> <span class='ext'>$ext</span> <span class='modified'>$date</span></li>";
+  }
 }
 
 function writeAll($path){
