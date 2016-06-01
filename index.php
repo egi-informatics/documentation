@@ -25,12 +25,8 @@
       ?>
     </form>
 
-    <h3>iPad</h3>
-    <ul> <?php writeAll('ipad/'); ?> </ul>
-    <h3>Website</h3>
-    <ul> <?php writeAll('website/'); ?> </ul>
-    <h3>Newsletter</h3>
-    <ul> <?php writeAll('newsletter/'); ?> </ul>
+    <?php list_directories(); ?>
+
     <footer></footer>
   </body>
 </html>

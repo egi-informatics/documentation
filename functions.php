@@ -1,4 +1,18 @@
 <?php
+
+function list_directories(){
+  $list = scandir(".");
+
+  foreach ($list as $item) {
+    if(is_dir($item) && $item{0} != "."){
+      echo "<h3>$item</h3>";
+      echo "<ul>";
+      writeAll($item . "/");
+      echo "</ul>";
+    }
+  }
+}
+
 function write($path, $file){
   # $format = "F d, Y H:i:s";
   $format = "F d, Y";
