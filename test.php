@@ -1,11 +1,20 @@
 <?php
 
-$list = scandir(".");
+$supported = ['.md', '.txt', '.html', '.pdf'];
 
-foreach ($list as $item) {
-  if(is_dir($item) && $item{0} != "."){
-    echo "<li>$item</li>";
+function get_extension($name){
+  global $supported;
+  foreach ($supported as $type){
+    if(contains($name, $type)){
+      return $type;
+    }
   }
 }
+
+function contains($outer, $inner){
+  return strpos($outer, $inner) !== false;
+}
+
+echo get_extension("spencer.txt");
 
  ?>

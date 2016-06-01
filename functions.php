@@ -2,9 +2,10 @@
 
 function list_directories(){
   $list = scandir(".");
+  arsort($list);
 
   foreach ($list as $item) {
-    if(is_dir($item) && $item{0} != "."){
+    if(is_dir($item) && $item{0} != "." && $item{0} != "_"){
       echo "<h3>$item</h3>";
       echo "<ul>";
       writeAll($item . "/");
@@ -17,7 +18,7 @@ function write($path, $file){
   # $format = "F d, Y H:i:s";
   $format = "F d, Y";
   $date = date($format, filemtime($path . $file));
-  echo "<li><span class='name'><a href='$path$file'>" . getName($file) . "</a></span> <span class='ext'>" . getExt($file) . "</span> <span class='modified'>" . $date . "</span></li>";
+  echo "<li><span class='name'><a href='$path$file'>" . get_name($file) . "</a></span> <span class='ext'>" . get_ext($file) . "</span> <span class='modified'>" . $date . "</span></li>";
 }
 
 function writeAll($path){
@@ -32,39 +33,27 @@ function writeAll($path){
   }
 }
 
-function getName($file){
-  if (strpos($file, '.txt') !== false) {
-      return basename($file, ".txt");
-  }
-  if (strpos($file, '.html') !== false) {
-      return basename($file, ".html");
-  }
-  if (strpos($file, '.pdf') !== false) {
-      return basename($file, ".pdf");
-  }
-  if (strpos($file, '.png') !== false) {
-      return basename($file, ".png");
-  }
-  if (strpos($file, '.rtf') !== false) {
-      return basename($file, ".rtf");
+$supported = ['md', 'txt', 'html', 'pdf'];
+
+function get_name($file){
+  global $supported;
+  foreach ($supported as $type) {
+    if (contains($file, ".$type")) {
+        return basename($file, ".$type");
+    }
   }
 }
 
-function getExt($file){
-  if(strpos($file, '.txt') !== false){
-    return "txt";
+function get_ext($file){
+  global $supported;
+  foreach ($supported as $type) {
+    if (contains($file, ".$type")) {
+        return $type;
+    }
   }
-  if(strpos($file, '.html') !== false){
-    return "html";
-  }
-  if(strpos($file, '.pdf') !== false){
-    return "pdf";
-  }
-  if(strpos($file, '.png') !== false){
-    return "png";
-  }
-  if(strpos($file, '.rtf') !== false){
-    return "rtf";
-  }
+}
+
+function contains($outer, $inner){
+  return strpos($outer, $inner) !== false;
 }
 ?>
