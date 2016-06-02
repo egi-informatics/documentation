@@ -29,6 +29,10 @@ hr{
   margin-bottom: 26px;
 }
 
+.content h2:first-child{
+  margin-top: 0px;
+}
+
 h3{
   padding-top: 10px;
 }

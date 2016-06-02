@@ -20,7 +20,7 @@ function main(){
 
   function readFile() {
       var file = finput.files[0];
-      console.log(file.size);
+      console.log("File size:\t" + file.size);
 
       var p = Papa.parse(file, config);
   }
@@ -49,12 +49,6 @@ function main(){
     // Prints all fields to document body
     printFields(fields);
 
-    body.innerHTML += "<h3 class='article'>Top Links</h3>";
-    body.innerHTML += "<div class='article-wrap'></div>";
-
-    var articleWrap = document.getElementsByClassName('article-wrap')[0];
-    articleWrap.innerHTML += "<span class='clicks'><span class='article' style='padding-right: 0;'></span>Clicks</span>";
-
     var articleStart = getArticleStart();
     var lastOfTop = articleStart + 5;
 
@@ -63,18 +57,19 @@ function main(){
       lastOfTop = dataLastIndex;
     }
 
+    body.innerHTML += "<div class='titles'><h3>Top Links</h3><div class='clicks'>Clicks</div></div>";
     for(i = articleStart; i <= lastOfTop; i++){
-      articleWrap.innerHTML += "<p><span class='article'>" + data[i][0].replace(/\//g, " ").trim().split(" ").pop() + "</span>" + data[i][1] + "</p>";
+      body.innerHTML += "<p class='row'><span class='article'>" + urlClean(data[i][0]) + "</span><span class='click-num'>" + data[i][1] + "</span></p>";
     }
 
-    body.innerHTML += "<h3 class='article'>All Links</h3>";
-    body.innerHTML += "<div class='article-wrap'></div>";
-    articleWrap = document.getElementsByClassName('article-wrap')[1];
-    articleWrap.innerHTML += "<span class='clicks'><span class='article' style='padding-right: 0;'></span>Clicks</span>";
-
+    body.innerHTML += "<div class='titles'><h3>All Links</h3><div class='clicks'>Clicks</div></div>";
     for(i = articleStart; i <= dataLastIndex; i++){
-      articleWrap.innerHTML += "<p><span class='article'>" + data[i][0].replace(/\//g, " ").trim().split(" ").pop() + "</span>" + data[i][1] + "</p>";
+      body.innerHTML += "<p class='row'><span class='article'>" + urlClean(data[i][0]) + "</span><span class='click-num'>" + data[i][1] + "</span></p>";
     }
+  }
+
+  function urlClean(long){
+    return long.replace(/\//g, " ").trim().split(" ").pop();
   }
 
   function printFields(fields){
