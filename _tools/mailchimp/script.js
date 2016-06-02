@@ -30,6 +30,7 @@ function main(){
     data = results.data;
     dataLastIndex = data.length - 2;
     hide(finput);
+    hide(document.getElementById('page-title'));
 
     var fields = [
       "Total Recipients:",
