@@ -49,7 +49,7 @@ function main(){
     // Prints all fields to document body
     printFields(fields);
 
-    body.innerHTML += "<h3 class='article'>Top Articles</h3>";
+    body.innerHTML += "<h3 class='article'>Top Links</h3>";
     body.innerHTML += "<div class='article-wrap'></div>";
 
     var articleWrap = document.getElementsByClassName('article-wrap')[0];
@@ -67,7 +67,7 @@ function main(){
       articleWrap.innerHTML += "<p><span class='article'>" + data[i][0].replace(/\//g, " ").trim().split(" ").pop() + "</span>" + data[i][1] + "</p>";
     }
 
-    body.innerHTML += "<h3 class='article'>All Articles</h3>";
+    body.innerHTML += "<h3 class='article'>All Links</h3>";
     body.innerHTML += "<div class='article-wrap'></div>";
     articleWrap = document.getElementsByClassName('article-wrap')[1];
     articleWrap.innerHTML += "<span class='clicks'><span class='article' style='padding-right: 0;'></span>Clicks</span>";

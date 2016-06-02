@@ -2,8 +2,9 @@
 
 body{
   font-family: "Myriad Pro", sans-serif;
-  width: 1000px;
+  width: 600px;
   margin: 0 auto;
+  padding-right: 200px;
 }
 
 .red{color: crimson;}
@@ -32,19 +33,23 @@ ul{
 }
 
 .name{
-  width: 320px;
+  //width: 320px;
   display: inline-block;
+  max-width: 250px;
 }
 
 .ext{
   font-family: monospace;
   color: #333;
   width: 40px;
-  display: inline-block;
+  float: right;
 }
 
 .modified{
-  margin-left: 30px;
+  float: right;
+  width: 130px;
+  text-align: right;
+  padding-right: 10px;
 }
 
 .md-link{
@@ -54,11 +59,16 @@ ul{
 }
 
 li {
-    padding: 5px 10px;
+  padding: 5px 10px;
+  border: 1px solid lightgray;
 }
 
 li:nth-child(odd) {
     background-color: whitesmoke;
+}
+
+li + li {
+  border-top: none;
 }
 
 a:visited {
