@@ -7,5 +7,6 @@
 
   ![](http://i.stack.imgur.com/X4SXa.png)
 
-0. Open Mailchimp [stat-viewer tool](_tools/mailchimp/stat-view.html)
+0. Open the [Mailchimp Statistics Viewer](_tools/mailchimp/stat-view.html)
 0. Select downloaded report to view statistics
+0. Print to PDF to distribute
