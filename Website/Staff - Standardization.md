@@ -12,7 +12,7 @@
 
 ### Tabs
 
-|                | Professional Expertise        | Education                          | Honors/Awards | Publications |
+| <span></span>  | Professional Expertise        | Education                          | Honors/Awards | Publications |
 |---------------:|:-----------------------------:|:----------------------------------:|:-------------:|:------------:|
 | **Size**       | `h3`                          | `h3`                               | `h3`          | `h4`         |
 | **Additional** | + Regional & Basin Experience | + Language Skills<br>+ Memberships | | |
