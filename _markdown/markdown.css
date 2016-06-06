@@ -112,5 +112,6 @@ span.highlight {
   }
   .content{
     margin: 0;
+    width: 900px;
   }
 }
