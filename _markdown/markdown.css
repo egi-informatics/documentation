@@ -16,6 +16,7 @@ code{
   padding: 1px 5px;
   border: 1px solid #E2E2E2;
   background-color: #eff0f1;
+  display: inline-block;
 }
 
 li {
@@ -76,6 +77,19 @@ blockquote{
   padding: 1px;
   padding-left: 18px;
   margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid lightgray;
+    padding: 8px;
+}
+
+tbody tr:nth-of-type(odd){
+  //background-color: whitesmoke;
 }
 
 @media print {
