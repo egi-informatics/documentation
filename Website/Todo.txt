@@ -5,3 +5,4 @@
 [ ] Projects - Update Status
 [ ] Staff - Add New
 [ ] Staff - Remove
+[X] Staff - Standardization
