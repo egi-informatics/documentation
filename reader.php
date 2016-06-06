@@ -24,3 +24,16 @@
   echo "<div class='date'>$date</div>";
   ?>
 </div>
+
+<script>
+
+// Hides empty table headers
+var th = document.getElementsByTagName('th');
+
+for(var i = 0; i < th.length; i++){
+  if(th[i].innerText.length == 0){
+    th[i].style.display = "none";
+  }
+}
+
+</script>

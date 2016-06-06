@@ -69,7 +69,11 @@ li li:before {
 }
 
 li p:first-of-type {
-    margin-top: 0;
+    margin: 0;
+}
+
+li{
+  padding-bottom: 1;
 }
 
 blockquote{
@@ -80,16 +84,26 @@ blockquote{
 }
 
 table {
-    border-collapse: collapse;
+  border-collapse: collapse;
+}
+
+li table{
+  margin: 20px 0;
 }
 
 th, td {
-    border: 1px solid lightgray;
-    padding: 8px;
+  border: 1px solid lightgray;
+  padding: 8px;
 }
 
 tbody tr:nth-of-type(odd){
   //background-color: whitesmoke;
+}
+
+span.highlight {
+  background-color: yellow;
+  padding: 5px 10px;
+  box-shadow: 0px 0px 6px -3px;
 }
 
 @media print {
