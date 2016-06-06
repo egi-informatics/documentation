@@ -20,11 +20,12 @@ function write($path, $file){
   $date = date($format, filemtime($path . $file));
   $name = get_name($file);
   $ext = get_ext($file);
+  $href = "$path$file";
   if($ext == "md"){
-    echo "<li><span class='name'><div value='$path$file' class='md-link'>$name</div></span> <span class='modified'>$date</span> <span class='ext'>$ext</span></li>";
-  } else{
-    echo "<li><span class='name'><a href='$path$file'>$name</a></span> <span class='modified'>$date</span> <span class='ext'>$ext</span></li>";
+    $file = str_replace(" ", "+", $file);
+    $href = "reader.php?name=$path$file";
   }
+  echo "<li><span class='name'><a href='$href'>$name</a></span> <span class='modified'>$date</span> <span class='ext'>$ext</span></li>";
 }
 
 function writeAll($path){

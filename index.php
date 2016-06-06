@@ -32,16 +32,6 @@
       <input id="md-submit" type='submit'>
     </form>
 
-    <footer>
-      <script type="text/javascript">
-      function loadMarkdown(){
-        var value = $(this).attr('value');
-        //alert(value);
-        $('#md-input').attr('value', value);
-        $('#md-submit').click();
-      }
-      $('.md-link').click(loadMarkdown);
-      </script>
-    </footer>
+    <footer></footer>
   </body>
 </html>

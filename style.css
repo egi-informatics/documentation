@@ -52,12 +52,6 @@ ul{
   padding-right: 10px;
 }
 
-.md-link{
-  color: blue;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
 li {
   padding: 5px 10px;
   border: 1px solid lightgray;
