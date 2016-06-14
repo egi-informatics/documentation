@@ -25,10 +25,12 @@ The current projects map and individual project pages pull status data from `res
 0. In Finder, go to `/UnitAdmin/0_EGI_Corporate_Associate.../EGI_Research_Portfolio/`
 0. Drag both versions of the research portfolio into the Cyberduck window to to replace files on website
 
+Make sure the new filenames match what they are replacing in Cyberduck. Other systems will break if the filenames change.
+
 ### Update Project PDF
 
 0. In Cyberduck, go to `/downloads/project_summaries/`
 0. In Finder, go to `/UnitAdmin/0_EGI_Corporate_Associate.../EGI_Current_CostShared_Research/`
 0. Drag updated version of the project PDF into the Cyberduck window to to replace file on website
 
-> If the filename has changed, edit the project page in [Wordpress Admin](https://egi.utah.edu/wp-admin) to reflect the new url.
+If the filename has changed, edit the project page in [Wordpress Admin](https://egi.utah.edu/wp-admin) to reflect the new url.

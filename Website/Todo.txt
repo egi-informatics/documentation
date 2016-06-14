@@ -2,7 +2,7 @@
 [X] CA - Remove
 [ ] Projects - Add New
 [ ] Projects - Remove
-[ ] Projects - Update Status
+[X] Projects - Update Status
 [ ] Staff - Add New
 [ ] Staff - Remove
 [X] Staff - Standardization
