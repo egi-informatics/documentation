@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="_markdown/markdown.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
 <div class="content">
   <?php

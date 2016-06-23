@@ -1,14 +1,16 @@
 <?php
 
 function list_directories(){
-  $list = scandir(".");
-  arsort($list);
+  $path = "Categories";
+  $list = scandir($path);
+  natcasesort($list);
 
   foreach ($list as $item) {
-    if(is_dir($item) && $item{0} != "." && $item{0} != "_"){
+    $sub_path = $path . "/" . $item;
+    if(is_dir($sub_path) && $item{0} != "." && $item{0} != "_"){
       echo "<h3>$item</h3>";
       echo "<ul>";
-      writeAll($item . "/");
+      writeAll($sub_path . "/");
       echo "</ul>";
     }
   }

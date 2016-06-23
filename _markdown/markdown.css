@@ -20,7 +20,7 @@ code{
 }
 
 li {
-  margin: 8px 0;
+  margin: 18px 0;
   padding-left: 8px;
 }
 
@@ -104,6 +104,10 @@ span.highlight {
   background-color: yellow;
   padding: 5px 10px;
   outline: 1px solid rgba(0,0,0,0.03);
+}
+
+p + img {
+    margin-top: 15px;
 }
 
 @media print {
