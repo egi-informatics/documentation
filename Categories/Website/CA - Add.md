@@ -4,7 +4,10 @@
 ### Website Sliders
 
 0. Open `Website/Company Logos/Website CA Sliders.ai`
-0. Select and delete company logo.
+0. Drag company logo into Illustrator window.
+0. With the image selected, click on 'Embed' (top left of screen).
+0. Move and scale image into place. Images are sorted alphabetically.
+0. Align all logos to vertical and horizontal guides.
 0. Arrange logos to fill gap by rotating all logos back one spot.
 0. Save changes.
 0. File > Export > Export for Screens... <kbd>opt</kbd> + <kbd>&#8984;</kbd> + <kbd>E</kbd>
@@ -13,13 +16,13 @@
 0. Make sure format is set to `png`
 0. Click 'Export Artboard'
 0. In Cyberduck, go to `/downloads/ca/sliders/`
-0. Select and drag local images to Cyberduck to replace current files
-0. Commit and push changes to Website repository
+0. Select and drag local images to Cyberduck to replace current files.
+0. Commit and push changes to Website repository.
 
 ### CA List PDF
 
-0. Open Cyberduck and FTP to website
+0. Open Cyberduck and FTP to website.
 0. In Cyberduck, go to `/downloads/ca/`
 0. In Finder, go to `UnitAdmin/O_EGI_Corporate.../EGI_CA_Program`
-0. Check to make sure files have been updated and do not have the company that is being removed
-0. Select and drag all local pdf files to Cyberduck to replace current files
+0. Check to make sure files have been updated and have the company that is being added.
+0. Select and drag all local pdf files to Cyberduck to replace current files.
