@@ -3,7 +3,7 @@
 
 ### Download & Install
 
-1. Download the Indesign export script: <a id="download" href="https://gist.githubusercontent.com/spencerlarry/188426dbf55fb584af38e09b70185f85/raw"><button>Download Script</button></a>
+1. Download the InDesign export script: <a id="download" href="https://gist.githubusercontent.com/spencerlarry/188426dbf55fb584af38e09b70185f85/raw"><button>Download Script</button></a>
 
 1. Download the EGI PDF export preset: <a href="_tools/indesign/EGI High Quality.joboptions?_" download="EGI High Quality.joboptions"><button>Download Preset</button></a>
 
@@ -11,7 +11,7 @@
 
 1. Click OK and the preset will be saved for all Adobe programs.
 
-1. In Indesign, show the Scripts panel: Window > Utilities > Scripts
+1. In InDesign, show the Scripts panel: Window > Utilities > Scripts
 
 1. Dock the panel on the right toolbar to allow quick access
 
@@ -19,11 +19,11 @@
 
   ![](http://i.stack.imgur.com/V2iIC.png)
 
-1. Copy downloaded script to this location inside the `Scripts Panel` folder and it will appear inside the Indesign scripts panel.
+1. Copy downloaded script to this location inside the `Scripts Panel` folder and it will appear inside the InDesign scripts panel.
 
 ### Use
 
-1. In Indesign, open `Promo Materials/CA_AB List Program/CA_AB_LIST_&_PROGRAM_2016.indd`
+1. In InDesign, open `Promo Materials/CA_AB List Program/CA_AB_LIST_&_PROGRAM_2016.indd`
 
 1. In the scripts panel, inside the __User__ folder, double-click on `ca-export-pdf.jsx` to run it.
 

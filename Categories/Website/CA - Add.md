@@ -1,4 +1,4 @@
-## Removing a CA
+## Adding a CA
 ---
 
 ### Website Sliders
