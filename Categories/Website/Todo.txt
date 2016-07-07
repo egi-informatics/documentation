@@ -6,3 +6,4 @@
 [ ] Staff - Add New
 [ ] Staff - Remove
 [X] Staff - Standardization
+[X] Staff - Info Request
