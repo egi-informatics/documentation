@@ -1,7 +1,7 @@
 ## Staff Info Request
 ---
 
-> <a href="_tools/email/Staff Info Request.mailstationery?_" download="Staff Info Request.mailstationery">Download Template</a> and install by double clicking on file.
+> <a href="_tools/email/Staff Info Request.mailstationery.zip?_" download="Staff Info Request.mailstationery.zip">Download Template</a> and install by double clicking on file.
 
 > For details about customization of email templates see this [gist](https://gist.github.com/spencerlarry/0dc35affbd93ab87ba895d1b60ea3b36)
 
