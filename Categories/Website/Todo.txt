@@ -3,7 +3,7 @@
 [ ] Projects - Add New
 [ ] Projects - Remove
 [X] Projects - Update Status
-[ ] Staff - Add New
-[ ] Staff - Remove
+[X] Staff - Add New
+[X] Staff - Remove
 [X] Staff - Standardization
 [X] Staff - Info Request
