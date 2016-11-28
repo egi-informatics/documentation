@@ -1,4 +1,4 @@
-## Update Project Status
+## Add, Remove, or Update Projects
 ---
 
 ### Upload updated Research Portfolio
@@ -19,7 +19,7 @@
 
 ### Make necessary changes to research.json
 
-0. Open the [project data manager tool](https://egi.utah.edu/docs/_tools/project-data-manager/) -- [source code](https://github.com/egi-informatics/project-data-manager)
+0. Open the [project data manager](https://egi.utah.edu/docs/_tools/project-data-manager/) -- [source code](https://github.com/egi-informatics/project-data-manager)
 0. Click the 'Load From Web' button
 0. Click on the project you need to modify in the list
 0. Make the changes and click the green save button
