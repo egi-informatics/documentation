@@ -14,12 +14,12 @@
 
 ### Check for Project Data Coherency
 
-0. Open https://egi-projects.herokuapp.com/
+0. Open the [project data checker](https://egi-projects.herokuapp.com/)  -- [source code](https://github.com/egi-informatics/projects)
 0. Run data comparison tool by clicking on the Projects button
 
 ### Make necessary changes to research.json
 
-0. Open the [project data manager tool](https://egi.utah.edu/docs/_tools/project-data-manager/)
+0. Open the [project data manager tool](https://egi.utah.edu/docs/_tools/project-data-manager/) -- [source code](https://github.com/egi-informatics/project-data-manager)
 0. Click the 'Load From Web' button
 0. Click on the project you need to modify in the list
 0. Make the changes and click the green save button
