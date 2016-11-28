@@ -3,7 +3,7 @@
 
 ### Download & Install
 
-1. Download the InDesign export script: <a id="download" href="https://gist.githubusercontent.com/spencerlarry/188426dbf55fb584af38e09b70185f85/raw"><button>Download Script</button></a>
+1. Download the InDesign export script: <a id="download" href="https://gist.githubusercontent.com/dotspencer/188426dbf55fb584af38e09b70185f85/raw"><button>Download Script</button></a>
 
 1. Download the EGI PDF export preset: <a href="_tools/indesign/EGI High Quality.joboptions?_" download="EGI High Quality.joboptions"><button>Download Preset</button></a>
 
@@ -47,8 +47,9 @@ function download(url){
     }
     });
 }
+var target;
 $('#download').click(function(event){
   event.preventDefault();
-  download("https://gist.githubusercontent.com/spencerlarry/188426dbf55fb584af38e09b70185f85/raw");
+  download(event.target.parentElement.href);
 });
 </script>
