@@ -17,6 +17,7 @@ code{
   border: 1px solid #E2E2E2;
   background-color: #eff0f1;
   display: inline-block;
+  white-space: pre;
 }
 
 li {

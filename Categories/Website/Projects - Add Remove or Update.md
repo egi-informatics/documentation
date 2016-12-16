@@ -12,7 +12,7 @@
 0. In Finder, go to `/UnitAdmin/0_EGI_Corporate_Associate.../EGI_Current_CostShared_Research/`
 0. Drag updated version of the project PDF into the Cyberduck window to to replace file on website
 
-### Check for Project Data Coherency
+### Check for Project Data Consistency
 
 0. Open the [project data checker](https://egi-projects.herokuapp.com/)  -- [source code](https://github.com/egi-informatics/projects)
 0. Run data comparison tool by clicking on the Projects button
