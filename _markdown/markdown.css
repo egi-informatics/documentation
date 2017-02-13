@@ -63,7 +63,12 @@ ol ul {
     list-style-type: none;
     padding: 0;
 }
-
+li ul{
+  padding-left: 10px;
+}
+li li{
+  list-style-type: none;
+}
 li li:before {
     content: "–";
     margin-right: 8px;
