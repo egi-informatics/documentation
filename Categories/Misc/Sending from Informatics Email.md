@@ -19,8 +19,8 @@ items to be aware of:
   - type: imap (should already be selected)
   - incoming server: .
   - outgoing server: smtp.utah.edu
-§  check override default port, and enter 587 in the port box
-§  check use SSL to connect
+    - check override default port, and enter 587 in the port box
+    - check use SSL to connect
 - select add account
 - Change the account description to Informatics
 - Change the full name to Informatics
